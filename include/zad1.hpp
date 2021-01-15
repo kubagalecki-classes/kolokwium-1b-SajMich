@@ -17,8 +17,7 @@ public:
 		sluchacze = 0;
 	}
 	Artysta(std::string s, unsigned u) : pseudonim(s), sluchacze(u) {};
-	virtual ~Artysta() {};
-	virtual void graj(std::ostream& os) const { os << pseudonim << ": " << sluchacze; }
+	void graj(std::ostream& os) const { os << pseudonim << ": " << sluchacze<<"\n"; }
 	const std::string& getPseudonim() const { return pseudonim; }
 	unsigned getSluchacze() const { return sluchacze; }
 private:
