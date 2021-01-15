@@ -10,7 +10,7 @@ class PopGwiazda: public Artysta
 {
 public:
 	PopGwiazda(const std::string& s, unsigned u): Artysta(s,u){};
-	void graj(std::ostream& os) const { os << "PopGwiazda: " << pseudonim; } 
+	void graj(std::ostream& os) const override { os << "PopGwiazda: " << pseudonim; }
 private:
 };
 
@@ -18,7 +18,7 @@ class RapGwiazda : public Artysta
 {
 public:
 	RapGwiazda(const std::string& s, unsigned u): Artysta(s,u){};
-	void graj(std::ostream& os) { os << "RapGwiazda: " << pseudonim; }
+	void graj(std::ostream& os) const override { os << "RapGwiazda: " << pseudonim; }
 private:
 };
 
