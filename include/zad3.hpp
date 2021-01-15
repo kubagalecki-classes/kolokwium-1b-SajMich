@@ -7,14 +7,14 @@ template <typename T>
 class ArtystaPlusInstrument
 {
 public:
-	ArtystaplusInstrument(const Artysta& A, const T& I)
+	ArtystaPlusInstrument(const Artysta& A, const T& I)
 	{
-		a = A;
+		a =A;
 		i = I;
 	}
 	unsigned koncert()
 	{
-		return i.liczbaUczestnikow(a.getSluchacze());
+		return i.liczbaUczestnikow(a);
 	}
 private:
 	Artysta a;
