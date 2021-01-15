@@ -15,4 +15,5 @@ std::vector<Artysta> stworzZespol(int n, const std::string& s)
 	{
 		tmp.push_back(Artysta(s, (i+1)));
 	}
+  return tmp;
 };
