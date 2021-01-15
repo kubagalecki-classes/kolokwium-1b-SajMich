@@ -14,7 +14,7 @@ std::vector<Artysta> stworzZespol(int n, const std::string& s)
 	std::vector<Artysta> tmp;
 	for (int i=0;i<n;i++)
 	{
-		tmp.push_back(Artysta(s, i));
+		tmp.push_back(Artysta(s, i+1));
 	}
 
 };
