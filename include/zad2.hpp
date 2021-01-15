@@ -9,24 +9,16 @@
 class PopGwiazda: public Artysta
 {
 public:
-	PopGwiazda(const std::string& s, unsigned u)
-	{
-		pseudonim = s;
-		sluchacze = u;
-	};
-	void graj(std::ostream& os) const { os << "PopGwiazda: " << pseudonim; }
+	PopGwiazda(const std::string& s, unsigned u): Artysta(s,u){};
+	void graj(std::ostream& os) const { os << "PopGwiazda: " << pseudonim; } 
 private:
 };
 
 class RapGwiazda : public Artysta
 {
 public:
-	RapGwiazda(const std::string& s, unsigned u)
-	{
-		pseudonim = s;
-		sluchacze = u;
-	};
-	void graj(std::ostream& os) const { os << "RapGwiazda: " << pseudonim; }
+	RapGwiazda(const std::string& s, unsigned u): Artysta(s,u){};
+	void graj(std::ostream& os) { os << "RapGwiazda: " << pseudonim; }
 private:
 };
 
